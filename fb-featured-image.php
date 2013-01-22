@@ -3,7 +3,7 @@
 Plugin Name: Facebook Featured Image and Open Graph Meta Tags
 Version: 1.0
 Plugin URI: http://www.ryanscowles.com
-Description: Automatically set the posts' Featured Image as the thumbnail and set appropriate Open Graph meta tags for sharing on Facebook.
+Description: This plugin will add the necessary Open Graph Meta tags to automatically set the posts' Featured Image as the thumbnail for sharing on Facebook and LinkedIn. It will also set Open Graph Meta tags for title, description, URL, type, and site name. 
 Author: Ryan S. Cowles
 Author URI: http://www.ryanscowles.com
 */
