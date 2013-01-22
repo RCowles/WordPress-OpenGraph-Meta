@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Facebook Featured Image and Open Graph Meta Tags ===
 Contributors: metacomcreative
 Donate link: http://ryanscowles.com/
 Tags: open graph, meta tags, facebook, featured image
