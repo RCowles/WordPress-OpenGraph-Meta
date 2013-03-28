@@ -3,16 +3,16 @@ Contributors: metacomcreative
 Donate link: http://ryanscowles.com/
 Tags: open graph, meta tags, facebook, featured image
 Requires at least: 3.5
-Tested up to: 3.5
-Stable tag: 1.0
+Tested up to: 3.5.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will place Open Graph meta tags in your head with automatically generated values. 
+This plugin will place automatically generated Open Graph meta tags in your head.
 
 == Description ==
 
-This plugin will add the necessary Open Graph Meta tags to automatically set the posts' Featured Image as the thumbnail for sharing on Facebook and LinkedIn. It will also set Open Graph Meta tags for title, description, URL, type, and site name. 
+This plugin will add the necessary Open Graph Meta tags to automatically set the posts' Featured Image as the thumbnail for sharing on Facebook and LinkedIn. It will also set Open Graph Meta tags for title, description, URL, type, and site name.
 
 
 == Installation ==
@@ -39,7 +39,13 @@ The plugin use WordPress Template tags to fill in the values for the Meta tags a
 
 == Changelog ==
 
+= 1.0.1 =
+* Use full size image instead of thumbnail for og:image tag.
+
 = 1.0 =
 * Initial commit
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Use full size image instead of thumbnail for og:image tag.
