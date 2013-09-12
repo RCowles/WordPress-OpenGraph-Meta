@@ -1,14 +1,14 @@
 === Facebook Featured Image and Open Graph Meta Tags ===
-Contributors: metacomcreative
+Contributors: metacomcreative, ryancowles
 Donate link: http://ryanscowles.com/
 Tags: open graph, meta tags, facebook, featured image
 Requires at least: 3.5
-Tested up to: 3.5.1
+Tested up to: 3.6
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will place automatically generated Open Graph meta tags in your head.
+This plugin will place automatically generated Open Graph meta tags.
 
 == Description ==
 
