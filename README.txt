@@ -3,8 +3,8 @@ Contributors: metacomcreative, ryancowles
 Donate link: http://ryanscowles.com/
 Tags: open graph, meta tags, facebook, featured image
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 1.0.1
+Tested up to: 4.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,9 @@ The plugin use WordPress Template tags to fill in the values for the Meta tags a
 1. Nuts and bolts of the plugin
 
 == Changelog ==
+
+= 1.0.2 =
+* Automatically disable Jetpack Open Graph tags
 
 = 1.0.1 =
 * Use full size image instead of thumbnail for og:image tag.

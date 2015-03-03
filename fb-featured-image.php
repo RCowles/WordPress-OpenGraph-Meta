@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Facebook Featured Image and Open Graph Meta Tags
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://ryanscowles.com/2013/01/set-wordpress-featured-image-thumbnail/
 Description: This plugin will add the necessary Open Graph Meta tags to automatically set the posts' Featured Image as the thumbnail for sharing on Facebook and LinkedIn. It will also set Open Graph Meta tags for title, description, URL, type, and site name.
 Author: Ryan S. Cowles
 Author URI: http://www.ryanscowles.com
 License: GPL2
 
-	Copyright 2013  Ryan Cowles  (email : mr@ryanscowles.com)
+	Copyright 2013-2015  Ryan Cowles  (email : mr@ryanscowles.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -29,19 +29,22 @@ define ('pluginDirName', 'fb-featured-image');
 // Allow for Facebooks's markup language
 add_filter('language_attributes', 'add_og_xml_ns');
 function add_og_xml_ns($content) {
-  return ' xmlns:og="http://ogp.me/ns#" ' . $content;
+	return ' xmlns:og="http://ogp.me/ns#" ' . $content;
 }
 
 add_filter('language_attributes', 'add_fb_xml_ns');
 function add_fb_xml_ns($content) {
-  return ' xmlns:fb="https://www.facebook.com/2008/fbml" ' . $content;
+	return ' xmlns:fb="https://www.facebook.com/2008/fbml" ' . $content;
 }
+
+// Disable Jetpack's Open Graph tags
+add_filter( 'jetpack_enable_open_graph', '__return_false' );
 
 // Set your Open Graph Meta Tags
 function fbogmeta_header() {
-  if (is_single()) {
-    ?>
-      <!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
+	if (is_single()) { ?>
+
+		<!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
 		<meta property="og:title" content="<?php the_title(); ?>"/>
 		<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
 		<meta property="og:url" content="<?php the_permalink(); ?>"/>
@@ -55,7 +58,6 @@ function fbogmeta_header() {
 		<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
 		<!-- End Open Graph Meta Tags !-->
 
-    <?php
-  }
+	<?php }
 }
 add_action('wp_head', 'fbogmeta_header');
